@@ -11,6 +11,10 @@ export default function Home() {
     navigate("/");
   };
 
+  const handleProfileClick = () => {
+    navigate("/MinSide");
+  };
+
   return (
     <div style={styles.container}>
       {/* Top bar */}
@@ -19,7 +23,7 @@ export default function Home() {
           ←
         </button>
         <h2 style={styles.title}>Hjem</h2>
-        <button style={styles.profileButton}>👤</button>
+        <button style={styles.profileButton} onClick={handleProfileClick}>👤</button>
       </div>
 
       {/* Main content */}
